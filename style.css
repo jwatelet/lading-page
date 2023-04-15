@@ -4,13 +4,30 @@ body {
   padding: 0;
 }
 
+.dark {
+  background-color: #1F2937;
+  color: #F9FAF8;
+}
+
+.light {
+  background-color: #F9FAF8;
+  color: #1F2937;
+}
+
+.gray {
+  background-color: #E5E7EB;
+}
+
+.blue {
+  color: #F9FAF8;
+  background-color: #3882F6;
+}
+
 .header h1 {
   margin: 0;
 }
 
 .header {
-  background-color: #1F2937;
-  color: #F9FAF8;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -38,9 +55,8 @@ img {
   display: flex;
   justify-content: center;
   gap: 233px;
-  background-color: #1F2937;
-  color: #F9FAF8;
   padding: 50px 0;
+  flex-wrap: wrap;
 }
 
 .hero h1 {
@@ -49,12 +65,9 @@ img {
 }
 
 .hero button {
-  color: #F9FAF8;
-  background-color: #3882F6;
   border-radius: 10px;
   padding: 8px 24px;
   border: none;
-
 }
 
 .hero-left {
@@ -75,7 +88,8 @@ img {
 .cards {
   display: flex;
   justify-content: center;
-  gap: 40px
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
 .card img {
@@ -89,11 +103,9 @@ img {
 }
 
 .testimonial {
-  background-color: #E5E7EB;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
   font-size: 36px;
   font-weight: 100;
   font-style: italic;
@@ -118,15 +130,10 @@ img {
   padding: 20px 40px;
   margin: 50px 300px;
   border-radius: 10px;
-  background-color: #3882F6;
-  color: #E5E7EB;
 }
 .call-to-action button {
-  background-color: #3882F6;
-
   border: 2px solid #E5E7EB;
   border-radius: 10px;
-  color: #E5E7EB;
   padding: 5px 25px;
 }
 
@@ -134,7 +141,30 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #1F2937;
   padding: 20px 0;
-  color: #E5E7EB;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
+
+  .hero {
+    gap: 20px;
+  }
+
+  .testimonial {
+    padding: 10px;
+  }
+
+  .call-to-action {
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px 10px;
+  }
+
+  .hero-right {
+    display: none;
+  }
 }

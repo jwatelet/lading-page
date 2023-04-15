@@ -1,3 +1,3 @@
 # Landing-page
 
-This landing page is made in purpose of the odin's project
+This landing page is made as part of the odin's project
