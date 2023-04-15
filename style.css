@@ -29,7 +29,8 @@ body {
 
 .header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 200px;
   align-items: center;
 }
 
@@ -53,9 +54,8 @@ img {
 
 .hero {
   display: flex;
-  justify-content: center;
-  gap: 233px;
-  padding: 50px 0;
+  justify-content: space-between;
+  padding: 50px 200px;
   flex-wrap: wrap;
 }
 
@@ -150,8 +150,15 @@ button:hover {
 
 @media only screen and (max-width: 1000px) {
 
+  .header {
+    padding: 0;
+    justify-content: space-around;
+  }
+
   .hero {
+    justify-content: space-around;
     gap: 20px;
+    padding: 0;
   }
 
   .testimonial {
